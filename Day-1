@@ -1,0 +1,99 @@
+// celsius to fahrenheit
+#include <iostream>
+using namespace std;
+int main() {
+    double celsius, fahrenheit;
+
+    cin >> celsius;
+
+    fahrenheit = (celsius * 9.0 / 5.0) + 32;
+
+    cout << fahrenheit << endl;
+
+    return 0;
+}
+
+// Local & Global Variable 
+#include <iostream>
+using namespace std;
+
+int global_variable = 100;
+
+int main()
+{
+    int local_variable;
+    int result;
+
+    cin >> local_variable;
+
+    result = global_variable / local_variable;
+
+    cout << result << endl;
+
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+//Check Whether a given sides ot triangle is equalateral or not? 
+int main() {
+    int side1, side2, side3;
+
+    cin >> side1 >> side2 >> side3;
+
+    bool isEqu = (side1 > 0) && (side1 == side2) && (side2 == side3);
+
+    cout << isEqu << endl;
+
+    return 0;
+}
+
+
+//Swapping of two variables 
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int a, b;
+
+    cin >> a >> b;
+
+    // Logic to swap values
+    int temp = a;
+    a = b;
+    b = temp;
+
+    // Printing the values
+    cout << a << "\n" << b << endl;
+
+    return 0;
+}
+
+// Login Credentials 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int userId = 1234;
+    int userPassword = 0000;
+
+    int inputId, inputPassword;
+
+    cout << "Enter User ID: ";
+    cin >> inputId;
+
+    cout << "Enter Password: ";
+    cin >> inputPassword;
+
+    bool isGranted = (userId == inputId) && (userPassword == inputPassword);
+
+    if (isGranted)
+        cout << "Access Granted" << endl;
+    else
+        cout << "Access Denied" << endl;
+
+    return 0;
+}
